@@ -25,7 +25,6 @@ const StyledButton = styled.button`
 `;
 
 const IngredientsList = (props) => {
-  console.log("IngredientsList rendered");
   const { ingredients, deleteIngredient } = props;
   return (
     <StyledContainer>
