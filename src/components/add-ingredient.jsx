@@ -28,8 +28,7 @@ const StyledButton = styled.button`
 `;
 
 const AddIngredient = ({addIngredient}) => {
-  console.log("AddIngredient rendered");
-  const { ingredient, setIngredient } = useState("")
+  const [ingredient, setIngredient] = useState("")
 
   return (
     <form className="">
@@ -38,12 +37,7 @@ const AddIngredient = ({addIngredient}) => {
         <input
           type="text"
           value={ingredient}
-          onClick={(e) => {
-            e.preventDefault();
-            if (!ingredient) return;
-            addIngredient(ingredient);
-            setIngredient("");
-          }}
+          onChange={(e) => setIngredient(e.target.value)}
         />
       </StyledFieldset>
       <StyledButtonContainer>

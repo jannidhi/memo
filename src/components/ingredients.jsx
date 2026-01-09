@@ -50,8 +50,6 @@ const initialIngredients = [
 ];
 
 const Ingredients = () => {
-  console.log("Ingredients rendered");
-
   const [ingredients, setIngredients] = useState(initialIngredients);
 
   const addIngredient = useCallback((ingredient) => {
@@ -66,7 +64,6 @@ const Ingredients = () => {
   }, []);
 
   const ingredientsHeaderText = useMemo(() => {
-    console.log("createIngredientsHeaderText called");
     return (
       <StyledHeading2>
         Ingredients ({ingredients.length})

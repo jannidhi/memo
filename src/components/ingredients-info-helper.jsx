@@ -10,7 +10,6 @@ const StyledButton = styled.button`
 `;
 
 const IngredientsInfoHelper = (props) => {
-  console.log("IngredientsInfoHelper rendered");
   return <StyledButton>📙</StyledButton>;
 };
 
